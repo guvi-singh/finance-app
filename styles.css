@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#results {
+  margin-top: 30px;
+}
+
+/* Add color classes to table headers */
+.table-primary th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table-primary {
+  border-color: #007bff;
+}
+
+.table-success th {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.table-success {
+  border-color: #28a745;
+}
+
+.table-danger th {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.table-danger {
+  border-color: #dc3545;
+}
+
+.table-warning th {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.table-warning {
+  border-color: #ffc107;
+}
+
+.table-info th {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.table-info {
+  border-color: #17a2b8;
+}
