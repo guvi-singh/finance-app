@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Pricing Simulation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4">Dynamic Pricing Simulation</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="simulationForm" class="bg-light p-4">
+          <div class="form-group">
+            <label for="cost">Cost per unit ($):</label>
+            <input type="number" class="form-control" id="cost" value="5">
+          </div>
+          <div class="form-group">
+            <label for="exchange-rate">Initial Exchange Rate (USD to EUR):</label>
+            <input type="number" class="form-control" id="exchange-rate" value="0.85">
+          </div>
+          <div class="form-group">
+            <label for="price">Selling Price ($):</label>
+            <input type="number" class="form-control" id="price" value="10">
+          </div>
+          <div class="form-group">
+            <label for="cpmr">Cost-Pricing Margin Ratio:</label>
+            <input type="number" class="form-control" id="cpmr" step="0.01" value="0.5">
+          </div>
+          <div class="form-group">
+            <label for="fluctuation">Exchange Rate Fluctuation:</label>
+            <input type="number" class="form-control" id="fluctuation" step="0.01" value="0.05">
+          </div>
+          <div class="form-group">
+            <label for="iterations">Number of Iterations:</label>
+            <input type="number" class="form-control" id="iterations" value="10">
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div id="results">
+          <h2>Simulation Results</h2>
+          <table class="table table-primary">
+            <thead>
+              <tr>
+                <th>Iteration</th>
+                <th>Exchange Rate</th>
+                <th>New Selling Price</th>
+                <th>New CPMR</th>
+              </tr>
+            </thead>
+            <tbody id="resultsBody">
+              <!-- Simulation results will be appended here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
