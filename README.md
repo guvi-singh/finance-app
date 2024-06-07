@@ -1,6 +1,3 @@
-Sure! Here's a README.md for your Dynamic Pricing Simulation project:
-
----
 
 # Dynamic Pricing Simulation
 
